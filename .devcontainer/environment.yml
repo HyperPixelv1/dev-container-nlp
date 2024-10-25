@@ -1,0 +1,26 @@
+name: nlp-ml-env
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.9
+  - pip
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - nltk
+  - spacy
+  - tensorflow
+  - keras
+  - pytorch
+  - torchvision
+  - transformers
+  - xgboost
+  - lightgbm
+  - jupyterlab
+  - pytest
+  - ipykernel
+  - sentence-transformers

@@ -1,0 +1,14 @@
+version: '3'
+services:
+  devcontainer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ../:/workspace
+      - ../volume/my_apps:/usr/src/my_apps
+    environment:
+      - PYTHONUNBUFFERED=1
+    ports:
+      - "8888:8888"  # Jupyter Notebook için port yönlendirme
+    tty: true
