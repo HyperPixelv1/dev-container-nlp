@@ -7,8 +7,6 @@ services:
     volumes:
       - ../:/workspace
       - ../volume/my_apps:/usr/src/my_apps
-    environment:
-      - PYTHONUNBUFFERED=1
     ports:
       - "8888:8888"  # Jupyter Notebook için port yönlendirme
-    tty: true
+    command: ["sh", "-c", "chmod -R 777 /workspace && tail -f /dev/null"]

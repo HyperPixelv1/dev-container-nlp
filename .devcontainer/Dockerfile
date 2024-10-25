@@ -4,10 +4,16 @@ WORKDIR /workspace
 
 # Copy environment.yml (if found) to a temp location so we update the environment. Also
 # copy "noop.txt" so the COPY instruction does not fail if no environment.yml exists.
-COPY environment.yml /tmp/conda-tmp/
-RUN if [ -f "/tmp/conda-tmp/environment.yml" ]; then umask 0002 && /opt/conda/bin/conda env update -n base -f /tmp/conda-tmp/environment.yml; fi \
-    && rm -rf /tmp/conda-tmp
+COPY environment.yml* /tmp/conda-tmp/
 
-# [Optional] Uncomment this section to install additional OS packages.
-# RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-#     && apt-get -y install --no-install-recommends <your-package-list-here>
+RUN apt-get update
+
+RUN apt-get update && apt-get -y install git procps build-essential curl swig
+RUN conda init bash
+RUN conda update -n base conda -y
+RUN conda env create --file /tmp/conda-tmp/environment.yml
+RUN conda install ipython_genutils
+RUN conda install ipykernel
+RUN ipython kernel install --user --name=env1
+
+
