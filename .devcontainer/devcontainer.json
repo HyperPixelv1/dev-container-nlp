@@ -11,26 +11,26 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"ms-python.python",              // Python desteği için temel uzantı
-				"ms-python.vscode-pylance",      // Python için gelişmiş dil sunucusu ve IntelliSense
-				"ms-toolsai.jupyter",            // Jupyter desteği, notebook'ları VS Code içinde çalıştırabilmek için
-				"ms-azuretools.vscode-docker",   // Docker yönetimi
-				"esbenp.prettier-vscode",        // Kod formatlama (özellikle JSON ve YAML için)
-				"visualstudioexptteam.vscodeintellicode",  // Yapay zeka destekli kod tamamlama
-				"redhat.vscode-yaml",            // YAML dosyaları için destek
-				"kevinrose.vsc-python-indent",   // Python'da daha iyi indent desteği
-				"ms-python.black-formatter",     // Black ile otomatik Python kod formatlama
-				"ms-python.flake8",              // Python için linting (kod kalitesi ve hata denetimi)
-				"eamodio.gitlens",               // Git entegrasyonu ve geliştirilmiş Git araçları
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-toolsai.jupyter",
+				"ms-azuretools.vscode-docker",
+				"esbenp.prettier-vscode",
+				"visualstudioexptteam.vscodeintellicode",
+				"redhat.vscode-yaml",
+				"kevinrose.vsc-python-indent",
+				"ms-python.black-formatter",
+				"ms-python.flake8",
+				"eamodio.gitlens",
 				"mhutchie.git-graph",
 				"Gruntfuggly.todo-tree",
-				"github.vscode-pull-request-github", // GitHub ile entegre çalışma (pull request'leri yönetme)
-				"bungcip.better-toml",           // TOML dosyaları için destek
-				"streetsidesoftware.code-spell-checker", // Kod yazım hatalarını kontrol eder
-				"ms-toolsai.vscode-ai",          // Yapay zeka modelleri geliştirmek için AI araçları
-				"ms-vscode-remote.remote-containers",  // Devcontainer desteği
-				"mutantdino.resourcemonitor"
-
+				"github.vscode-pull-request-github",
+				"bungcip.better-toml",
+				"streetsidesoftware.code-spell-checker",
+				"ms-toolsai.vscode-ai",
+				"ms-vscode-remote.remote-containers",
+				"mutantdino.resourcemonitor",
+				"ms-toolsai.datawrangler"
 			]
 		}
 	},
